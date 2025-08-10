@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tự Động Hóa Quy Trình Kinh Doanh - Tiết Kiệm 20h Mỗi Tuần</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Tự động hóa quy trình kinh doanh của bạn 
+                        <span class="text-yellow-300">chỉ trong 7 ngày</span>
+                    </h1>
+                    <h2 class="text-xl lg:text-2xl mb-8 text-gray-200 font-light">
+                        Kết hợp n8n + AI Agent để loại bỏ tác vụ lặp lại, tăng tốc doanh thu
+                        <br><span class="text-yellow-300 font-semibold">Tiết kiệm 20h mỗi tuần</span>
+                    </h2>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <button onclick="scrollToForm()" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 pulse-animation">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            Đăng ký tư vấn miễn phí
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                            <i class="fas fa-play mr-2"></i>
+                            Xem demo
+                        </button>
+                    </div>
+                    <div class="flex items-center text-gray-200">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Miễn phí tư vấn • Không cam kết • Kết quả trong 7 ngày</span>
+                    </div>
+                </div>
+                <div class="floating">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Demo Workflow</h3>
+                            <p class="text-gray-600">Tự động hóa quy trình bán hàng</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                                <span class="text-gray-700">Khách hàng điền form</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-arrow-down text-gray-400 text-2xl"></i>
+                            </div>
+                            <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                                <span class="text-gray-700">AI phân tích & gửi email</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-arrow-down text-gray-400 text-2xl"></i>
+                            </div>
+                            <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                                <span class="text-gray-700">Tự động tạo báo giá</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Bạn có đang gặp những vấn đề này?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hàng ngàn doanh nghiệp SME đang lãng phí thời gian và tiền bạc vì những tác vụ lặp lại không cần thiết
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-red-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Mất hàng giờ mỗi ngày</h3>
+                    <p class="text-gray-600">Làm việc lặp lại như copy-paste dữ liệu, gửi email thủ công, cập nhật báo cáo</p>
+                </div>
+                <div class="text-center p-8 bg-orange-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-broken-chain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Quy trình rời rạc</h3>
+                    <p class="text-gray-600">Dữ liệu không đồng bộ giữa các phần mềm, thông tin bị thất lạc</p>
+                </div>
+                <div class="text-center p-8 bg-yellow-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Dễ sai sót</h3>
+                    <p class="text-gray-600">Nhân sự làm thủ công, thiếu kiểm soát chất lượng, ảnh hưởng uy tín</p>
+                </div>
+                <div class="text-center p-8 bg-blue-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line-down text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Tăng trưởng chậm</h3>
+                    <p class="text-gray-600">Không thể mở rộng quy mô vì phụ thuộc quá nhiều vào thao tác thủ công</p>
+                </div>
+                <div class="text-center p-8 bg-purple-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-money-bill-wave text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Chi phí nhân sự cao</h3>
+                    <p class="text-gray-600">Phải thuê thêm người để xử lý công việc có thể tự động hóa</p>
+                </div>
+                <div class="text-center p-8 bg-green-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Nhân viên kiệt sức</h3>
+                    <p class="text-gray-600">Làm việc lặp lại gây nhàm chán, giảm động lực và hiệu suất</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                        Giải pháp <span class="gradient-text">tự động hóa toàn diện</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Chúng tôi thiết kế và triển khai hệ thống tự động hóa tùy chỉnh, kết hợp n8n + AI Agent để xử lý toàn bộ tác vụ lặp lại, giúp bạn tập trung vào tăng trưởng.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Phân tích quy trình hiện tại và xác định điểm cần tự động hóa</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Thiết kế workflow tùy chỉnh với n8n và AI Agent</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Triển khai, test và bàn giao hệ thống hoàn chỉnh</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Hỗ trợ vận hành và tối ưu hóa liên tục</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Trước & Sau Automation</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="bg-red-100 rounded-lg p-4 mb-4">
+                                    <i class="fas fa-user-tie text-red-500 text-3xl mb-2"></i>
+                                    <p class="text-sm text-gray-600">TRƯỚC</p>
+                                </div>
+                                <ul class="text-sm text-gray-600 space-y-2">
+                                    <li>• 8h/ngày làm thủ công</li>
+                                    <li>• 15% tỷ lệ sai sót</li>
+                                    <li>• Phản hồi chậm 24h</li>
+                                    <li>• Stress cao</li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-green-100 rounded-lg p-4 mb-4">
+                                    <i class="fas fa-robot text-green-500 text-3xl mb-2"></i>
+                                    <p class="text-sm text-gray-600">SAU</p>
+                                </div>
+                                <ul class="text-sm text-gray-600 space-y-2">
+                                    <li>• 2h/ngày giám sát</li>
+                                    <li>• 0.1% tỷ lệ sai sót</li>
+                                    <li>• Phản hồi tức thì</li>
+                                    <li>• Tập trung chiến lược</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Lợi ích vượt trội khi sử dụng dịch vụ
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hơn 50 doanh nghiệp đã tin tưởng và đạt được kết quả ấn tượng
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-blue-50 rounded-xl card-hover">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Tiết kiệm thời gian</h3>
+                    <p class="text-4xl font-bold text-blue-500 mb-2">50-80%</p>
+                    <p class="text-gray-600">Cắt giảm thao tác thủ công, tự động hóa quy trình lặp lại</p>
+                </div>
+                <div class="text-center p-8 bg-green-50 rounded-xl card-hover">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-check text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Giảm sai sót</h3>
+                    <p class="text-4xl font-bold text-green-500 mb-2">99.9%</p>
+                    <p class="text-gray-600">Quy trình tự động, kiểm tra liên tục, đảm bảo chất lượng</p>
+                </div>
+                <div class="text-center p-8 bg-purple-50 rounded-xl card-hover">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Tùy chỉnh linh hoạt</h3>
+                    <p class="text-4xl font-bold text-purple-500 mb-2">100%</p>
+                    <p class="text-gray-600">Thiết kế theo nhu cầu riêng của từng doanh nghiệp</p>
+                </div>
+                <div class="text-center p-8 bg-orange-50 rounded-xl card-hover">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Hỗ trợ tận tâm</h3>
+                    <p class="text-4xl font-bold text-orange-500 mb-2">24/7</p>
+                    <p class="text-gray-600">Bảo trì, cải tiến định kỳ và hỗ trợ kỹ thuật</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Automation mẫu - <span class="gradient-text">Demo miễn phí</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Khám phá những giải pháp tự động hóa phổ biến mà chúng tôi đã triển khai thành công
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-share-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Hệ thống tự đăng bài đa kênh</h3>
+                        <p class="text-gray-600 mb-6">Tự động đăng content lên Facebook, Instagram, LinkedIn, Website cùng lúc. Lên lịch trước, tối ưu thời gian đăng.</p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li>• Tiết kiệm 15h/tuần</li>
+                            <li>• Tăng 300% hiệu quả marketing</li>
+                            <li>• Đồng bộ trên 5+ nền tảng</li>
+                        </ul>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                            <i class="fas fa-eye mr-2"></i>
+                            Xem chi tiết
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-robot text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">AI viết content và gửi email</h3>
+                        <p class="text-gray-600 mb-6">AI tự động tạo nội dung email marketing, phân khúc khách hàng và gửi email cá nhân hóa theo hành vi.</p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li>• Tăng 250% tỷ lệ mở email</li>
+                            <li>• Tự động phân khúc khách hàng</li>
+                            <li>• Cá nhân hóa 100% nội dung</li>
+                        </ul>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                            <i class="fas fa-eye mr-2"></i>
+                            Nhận demo
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-sync-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Tự động đồng bộ dữ liệu</h3>
+                        <p class="text-gray-600 mb-6">Kết nối CRM, kế toán, kho hàng, website. Dữ liệu cập nhật real-time, báo cáo tự động.</p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li>• Đồng bộ 10+ ứng dụng</li>
+                            <li>• Cập nhật real-time</li>
+                            <li>• Báo cáo tự động hàng ngày</li>
+                        </ul>
+                        <button class="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                            <i class="fas fa-eye mr-2"></i>
+                            Xem chi tiết
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Bảng giá tham khảo
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Giá cả minh bạch, phù hợp với mọi quy mô doanh nghiệp
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 card-hover">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Gói Cơ Bản</h3>
+                        <div class="text-4xl font-bold text-blue-500 mb-2">2-5tr</div>
+                        <p class="text-gray-600">Setup một lần</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">1-2 workflow automation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Kết nối 3-5 ứng dụng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Hướng dẫn sử dụng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Bảo hành 3 tháng</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToForm()" class="w-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                        Chọn gói này
+                    </button>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl p-8 card-hover transform scale-105 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">
+                        PHỔ BIẾN NHẤT
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Gói Cao Cấp</h3>
+                        <div class="text-4xl font-bold mb-2">5-10tr</div>
+                        <p class="text-blue-100">Setup một lần</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-300 mr-3"></i>
+                            <span>3-5 workflow automation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-300 mr-3"></i>
+                            <span>Kết nối 10+ ứng dụng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-300 mr-3"></i>
+                            <span>Tích hợp AI Agent</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-300 mr-3"></i>
+                            <span>Dashboard báo cáo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-300 mr-3"></i>
+                            <span>Bảo hành 6 tháng</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToForm()" class="w-full bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                        Chọn gói này
+                    </button>
+                </div>
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 card-hover">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Gói Custom</h3>
+                        <div class="text-4xl font-bold text-purple-500 mb-2">Liên hệ</div>
+                        <p class="text-gray-600">Tùy chỉnh hoàn toàn</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Không giới hạn workflow</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Tích hợp mọi ứng dụng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">AI Agent nâng cao</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Hỗ trợ 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Bảo hành 12 tháng</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToForm()" class="w-full border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                        Liên hệ tư vấn
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 max-w-4xl mx-auto">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">Gói Duy Trì (Tùy chọn)</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-blue-500">199k/tháng</div>
+                            <p class="text-gray-600">Cơ bản</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-green-500">499k/tháng</div>
+                            <p class="text-gray-600">Nâng cao</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-purple-500">999k/tháng</div>
+                            <p class="text-gray-600">Premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Khách hàng nói gì về chúng tôi
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hơn 50 doanh nghiệp đã tin tưởng và đạt được kết quả ấn tượng
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            A
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Anh Minh</h4>
+                            <p class="text-gray-600">CEO - Công ty TNHH ABC</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Sau khi triển khai automation, công ty tiết kiệm được 25h mỗi tuần. Nhân viên có thời gian tập trung vào công việc quan trọng hơn. ROI đạt 300% chỉ sau 3 tháng."
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            L
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Chị Lan</h4>
+                            <p class="text-gray-600">Giám đốc Marketing - XYZ Corp</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Hệ thống AI email marketing giúp tăng tỷ lệ mở email từ 15% lên 45%. Lead quality cải thiện đáng kể. Đội ngũ hỗ trợ rất chuyên nghiệp và tận tâm."
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            T
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Anh Tuấn</h4>
+                            <p class="text-gray-600">Founder - Startup DEF</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Với startup nhỏ như chúng tôi, automation giúp vận hành như công ty lớn. Quy trình bán hàng từ lead đến chốt deal hoàn toàn tự động. Tuyệt vời!"
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Thành tích đạt được</h3>
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-500 mb-2">50+</div>
+                            <p class="text-gray-600">Doanh nghiệp tin tưởng</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-green-500 mb-2">200+</div>
+                            <p class="text-gray-600">Workflow đã triển khai</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-purple-500 mb-2">1000+</div>
+                            <p class="text-gray-600">Giờ làm việc tiết kiệm/tháng</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-orange-500 mb-2">98%</div>
+                            <p class="text-gray-600">Khách hàng hài lòng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Quy trình làm việc
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Quy trình chuyên nghiệp, minh bạch từ tư vấn đến bàn giao
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-2xl">
+                        1
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <i class="fas fa-comments text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Tiếp nhận yêu cầu</h3>
+                        <p class="text-gray-600">Tư vấn miễn phí, phân tích nhu cầu và đánh giá quy trình hiện tại</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-2xl">
+                        2
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6">
+                        <i class="fas fa-lightbulb text-green-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Lên giải pháp</h3>
+                        <p class="text-gray-600">Thiết kế workflow chi tiết, báo giá minh bạch và timeline cụ thể</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-2xl">
+                        3
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6">
+                        <i class="fas fa-cogs text-purple-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Triển khai</h3>
+                        <p class="text-gray-600">Xây dựng, test và tối ưu hệ thống automation theo yêu cầu</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-2xl">
+                        4
+                    </div>
+                    <div class="bg-orange-50 rounded-xl p-6">
+                        <i class="fas fa-graduation-cap text-orange-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Bàn giao</h3>
+                        <p class="text-gray-600">Hướng dẫn sử dụng, đào tạo nhân viên và bàn giao tài liệu</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-2xl">
+                        5
+                    </div>
+                    <div class="bg-red-50 rounded-xl p-6">
+                        <i class="fas fa-tools text-red-500 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Bảo trì</h3>
+                        <p class="text-gray-600">Hỗ trợ vận hành, bảo trì định kỳ và tối ưu hóa liên tục</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="consultation-form" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-5xl font-bold mb-6">
+                    Bắt đầu tự động hóa ngay hôm nay
+                </h2>
+                <p class="text-2xl mb-8 text-gray-200">
+                    Nhận tư vấn miễn phí và demo workflow phù hợp với doanh nghiệp của bạn
+                </p>
+                <div class="bg-white rounded-2xl p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Đăng ký tư vấn miễn phí</h3>
+                    <form id="consultationForm" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Họ và tên *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black placeholder-gray-500 bg-white" required>
+                            <input type="email" name="email" placeholder="Email *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black placeholder-gray-500 bg-white" required>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Số điện thoại *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black placeholder-gray-500 bg-white" required>
+                        <textarea name="message" placeholder="Mô tả ngắn về nhu cầu tự động hóa của bạn..." rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black placeholder-gray-500 bg-white"></textarea>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 pulse-animation">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Nhận tư vấn miễn phí ngay
+                        </button>
+                    </form>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-600 mb-4">Hoặc liên hệ trực tiếp:</p>
+                        <div class="flex justify-center space-x-6">
+                            <a href="tel:0344688217" class="flex items-center text-blue-600 hover:text-blue-700 font-semibold">
+                                <i class="fas fa-phone mr-2"></i>
+                                0344.688.217
+                            </a>
+                            <a href="https://zalo.me/0344688217" class="flex items-center text-green-600 hover:text-green-700 font-semibold">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Zalo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    Câu hỏi thường gặp
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Giải đáp những thắc mắc phổ biến về dịch vụ tự động hóa
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Có đảm bảo bảo mật dữ liệu không?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Chúng tôi cam kết bảo mật tuyệt đối dữ liệu khách hàng. Tất cả kết nối đều được mã hóa SSL, không lưu trữ thông tin nhạy cảm và tuân thủ các tiêu chuẩn bảo mật quốc tế. Ký hợp đồng bảo mật (NDA) trước khi triển khai.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Bao lâu thì hoàn thành dự án?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Thời gian triển khai phụ thuộc vào độ phức tạp: Gói cơ bản 3-5 ngày, gói cao cấp 7-10 ngày, gói custom 2-4 tuần. Chúng tôi cam kết timeline cụ thể trong hợp đồng và cập nhật tiến độ hàng ngày.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Tôi không rành kỹ thuật, có dùng được không?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Hoàn toàn có thể! Chúng tôi thiết kế giao diện thân thiện, đào tạo chi tiết cách sử dụng và cung cấp tài liệu hướng dẫn. Hỗ trợ 24/7 qua Zalo/Hotline khi cần thiết. Bạn chỉ cần biết sử dụng máy tính cơ bản.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Có thể tùy chỉnh theo nhu cầu riêng không?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Đây là điểm mạnh của chúng tôi! Mỗi doanh nghiệp có quy trình riêng, chúng tôi phân tích kỹ và thiết kế workflow phù hợp 100%. Không sử dụng template có sẵn mà build từ đầu theo yêu cầu cụ thể.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Nếu có lỗi thì xử lý như thế nào?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Chúng tôi có hệ thống monitoring 24/7 để phát hiện lỗi sớm. Cam kết phản hồi trong 30 phút và khắc phục trong 2-4h. Bảo hành miễn phí theo gói đã chọn. Có backup tự động để khôi phục nhanh chóng.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-all duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-xl font-bold text-gray-800">Chi phí duy trì hàng tháng có đắt không?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-8 pb-6 hidden">
+                        <p class="text-gray-600">Chi phí duy trì chỉ từ 199k/tháng cho gói cơ bản, rẻ hơn nhiều so với việc thuê nhân viên làm thủ công. Bạn có thể tự vận hành sau khi được đào tạo, chỉ cần hỗ trợ khi có vấn đề phát sinh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">AutoFlow Pro</h3>
+                    <p class="text-gray-400 mb-6">Chuyên gia tự động hóa quy trình kinh doanh, giúp doanh nghiệp tiết kiệm thời gian và tăng hiệu quả.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Dịch vụ</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tự động hóa Marketing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tự động hóa Bán hàng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tích hợp AI Agent</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Đồng bộ dữ liệu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Hỗ trợ</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tài liệu hướng dẫn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Video tutorial</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Liên hệ</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            0344.688.217
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@autoflowpro.vn
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Hà Nội, Việt Nam
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AutoFlow Pro. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll to form function
+        function scrollToForm() {
+            document.getElementById('consultation-form').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission với n8n webhook integration - Cải tiến
+        document.getElementById('consultationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Hiển thị loading state
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Đang gửi...';
+            submitButton.disabled = true;
+            
+            // Lấy dữ liệu form
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name').trim(),
+                email: formData.get('email').trim(),
+                phone: formData.get('phone').trim(),
+                message: formData.get('message').trim(),
+                timestamp: new Date().toLocaleString('vi-VN'),
+                source: 'Landing Page - Tự động hóa',
+                userAgent: navigator.userAgent,
+                referrer: document.referrer || 'Direct'
+            };
+            
+            // Validation
+            if (!data.name || !data.email || !data.phone) {
+                showNotification('Vui lòng điền đầy đủ thông tin bắt buộc!', 'error');
+                resetSubmitButton();
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                showNotification('Email không hợp lệ!', 'error');
+                resetSubmitButton();
+                return;
+            }
+            
+            // Phone validation (Vietnamese format)
+            const phoneRegex = /^(0|\+84)[0-9]{9,10}$/;
+            if (!phoneRegex.test(data.phone.replace(/\s/g, ''))) {
+                showNotification('Số điện thoại không hợp lệ!', 'error');
+                resetSubmitButton();
+                return;
+            }
+            
+            // Test webhook trước khi gửi chính thức
+            console.log('🚀 Đang gửi dữ liệu tới n8n webhook:', data);
+            
+            try {
+                // n8n webhook URL với timeout và retry logic
+                const n8nWebhookUrl = 'https://dqthai.online/webhook-test/bc664824-f349-40b9-a9a1-c4c56721e957';
+                
+                // Thử gửi với timeout 10 giây
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+                
+                const response = await fetch(n8nWebhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                        'User-Agent': 'AutoFlow-Landing-Page/1.0'
+                    },
+                    body: JSON.stringify(data),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
+                console.log('📡 Response status:', response.status);
+                console.log('📡 Response headers:', [...response.headers.entries()]);
+                
+                if (response.ok) {
+                    const responseData = await response.text();
+                    console.log('✅ Webhook response:', responseData);
+                    showSuccessModal(data);
+                    this.reset();
+                } else {
+                    console.error('❌ Webhook failed with status:', response.status);
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+            } catch (error) {
+                console.error('❌ Webhook error:', error);
+                
+                if (error.name === 'AbortError') {
+                    console.log('⏰ Request timeout - showing fallback');
+                    showNotification('Kết nối chậm, vui lòng liên hệ trực tiếp!', 'error');
+                } else {
+                    console.log('🔄 Network error - showing fallback');
+                    showNotification('Lỗi kết nối, vui lòng thử lại hoặc liên hệ trực tiếp!', 'error');
+                }
+                
+                // Luôn hiển thị fallback modal để đảm bảo khách hàng có thông tin liên hệ
+                showFallbackModal(data);
+            }
+            
+            function resetSubmitButton() {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }
+            
+            resetSubmitButton();
+        });
+        
+        // Hàm hiển thị thông báo
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed; top: 20px; right: 20px; z-index: 10001;
+                padding: 15px 20px; border-radius: 8px; color: white; font-weight: bold;
+                background: ${type === 'error' ? '#ef4444' : type === 'success' ? '#10b981' : '#3b82f6'};
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15); animation: slideIn 0.3s ease;
+            `;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            setTimeout(() => notification.remove(), 4000);
+        }
+        
+        // Modal thành công
+        function showSuccessModal(data) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                background: rgba(0,0,0,0.8); z-index: 10000; display: flex; 
+                align-items: center; justify-content: center; padding: 20px;
+            `;
+            
+            modal.innerHTML = `
+                <div style="background: white; padding: 40px; border-radius: 20px; max-width: 600px; width: 100%; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: #10b981; border-radius: 50%; 
+                                display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fas fa-check text-white text-3xl"></i>
+                    </div>
+                    
+                    <h3 style="color: #1f2937; margin-bottom: 15px; font-size: 28px; font-weight: bold;">
+                        🎉 Đăng ký thành công!
+                    </h3>
+                    
+                    <p style="color: #6b7280; margin-bottom: 25px; font-size: 16px; line-height: 1.6;">
+                        Cảm ơn <strong>${data.name}</strong>! Chúng tôi đã nhận được thông tin đăng ký của bạn.<br>
+                        Đội ngũ tư vấn sẽ liên hệ với bạn trong <strong>15-30 phút</strong> tới.
+                    </p>
+                    
+                    <div style="background: #f3f4f6; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                        <h4 style="color: #374151; margin-bottom: 15px; font-weight: bold;">📋 Thông tin đã gửi:</h4>
+                        <div style="text-align: left; color: #6b7280;">
+                            <p style="margin: 8px 0;"><strong>👤 Tên:</strong> ${data.name}</p>
+                            <p style="margin: 8px 0;"><strong>📧 Email:</strong> ${data.email}</p>
+                            <p style="margin: 8px 0;"><strong>📱 SĐT:</strong> ${data.phone}</p>
+                            ${data.message ? `<p style="margin: 8px 0;"><strong>💼 Nhu cầu:</strong> ${data.message}</p>` : ''}
+                        </div>
+                    </div>
+                    
+                    <div style="background: #dcfce7; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                        <p style="color: #166534; margin-bottom: 15px; font-weight: bold;">
+                            🚀 Cần hỗ trợ gấp? Liên hệ ngay:
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                            <a href="tel:0344688217" 
+                               style="background: #10b981; color: white; text-decoration: none; padding: 12px 20px; 
+                                      border-radius: 8px; font-size: 16px; text-align: center; font-weight: bold;">
+                                📞 0344.688.217
+                            </a>
+                            <a href="https://zalo.me/0344688217" target="_blank"
+                               style="background: #0ea5e9; color: white; text-decoration: none; padding: 12px 20px; 
+                                      border-radius: 8px; font-size: 16px; text-align: center; font-weight: bold;">
+                                💬 Chat Zalo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <button onclick="this.parentElement.parentElement.remove()" 
+                            style="background: #3b82f6; color: white; border: none; padding: 15px 40px; 
+                                   border-radius: 10px; font-size: 16px; cursor: pointer; font-weight: bold;">
+                        ✅ Hoàn tất
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+        
+        // Modal fallback khi n8n không hoạt động
+        function showFallbackModal(data) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                background: rgba(0,0,0,0.8); z-index: 10000; display: flex; 
+                align-items: center; justify-content: center; padding: 20px;
+            `;
+            
+            modal.innerHTML = `
+                <div style="background: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 100%;">
+                    <h3 style="color: #1f2937; margin-bottom: 20px; text-align: center; font-size: 24px;">
+                        📝 Thông tin đã được ghi nhận!
+                    </h3>
+                    
+                    <div style="background: #fef3c7; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #f59e0b;">
+                        <p style="color: #92400e; margin-bottom: 10px; font-weight: bold;">⚠️ Hệ thống đang bảo trì</p>
+                        <p style="color: #92400e; margin: 5px 0; font-size: 14px;">
+                            Để đảm bảo nhận được phản hồi nhanh nhất, vui lòng liên hệ trực tiếp:
+                        </p>
+                    </div>
+                    
+                    <div style="background: #dcfce7; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <p style="color: #166534; margin-bottom: 15px; font-weight: bold; text-align: center;">
+                            🚀 LIÊN HỆ NGAY - Phản hồi trong 5 phút!
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                            <a href="tel:0344688217" 
+                               style="background: #10b981; color: white; text-decoration: none; padding: 15px 20px; 
+                                      border-radius: 8px; font-size: 16px; text-align: center; font-weight: bold;">
+                                📞 Gọi: 0344.688.217
+                            </a>
+                            <a href="https://zalo.me/0344688217" target="_blank"
+                               style="background: #0ea5e9; color: white; text-decoration: none; padding: 15px 20px; 
+                                      border-radius: 8px; font-size: 16px; text-align: center; font-weight: bold;">
+                                💬 Chat Zalo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button onclick="this.parentElement.parentElement.parentElement.remove()" 
+                                style="background: #6b7280; color: white; border: none; padding: 12px 30px; 
+                                       border-radius: 8px; font-size: 16px; cursor: pointer;">
+                            ✅ Đã hiểu
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+ercel
+        // Observe all cards and sections
+        document.querySelectorAll('.card-hover, section > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c7f647917e90b2',t:'MTc1NDc0OTkzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
